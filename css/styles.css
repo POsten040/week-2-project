@@ -1,10 +1,27 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url("../img/choose.jpg");
+  background-size: cover;
+  
+}
+#formOne {  
+  background: rgb(88, 63, 63);
+  color: aliceblue;
+  border: solid 50px rgb(189, 187, 167);
+  opacity: 0%;
+  transition: 1s;
+}
+
 .centered {
   text-align: center;
+  color: white;
+  background-color:rgb(88, 63, 63);
 }
 
 .btn {
   color: white;
   background-color: green;
+  
 }
 
 #btn2 {
@@ -14,4 +31,15 @@
 
 #python, #javascript, #C {
   display: none;
+}
+
+
+
+#formOne:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+#seefuture {
+  color: rgb(0, 0, 0);
+  padding: 10px;
 }
