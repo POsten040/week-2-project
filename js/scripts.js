@@ -9,9 +9,25 @@ $(document).ready(function() {
     const fifthanswer = parseInt($("#fifth").val());
     const sum = firstanswer + secondanswer + thirdanswer + fourthanswer + fifthanswer
     if (sum <= 5) {
-      $("#python").append("Python!");
-      event.preventDefault();
+      $("h1#python").toggle(function(){
+        $("h1#javascript").hide(function(){
+          $("h1#C").hide();
+        });
+      });
+    } else if (sum >= 6 && sum <= 10) {
+      $("h1#javascript").toggle(function(){
+        $("h1#python").hide(function(){
+          $("h1#C").hide();
+        });
+      });
+    } else if (sum >10) {
+      $("h1#C").toggle(function(){
+        $("h1#javascript").hide(function(){
+          $("h1#python").hide();
+        });
+      });
     }
+  event.preventDefault();
   });
 });
 
