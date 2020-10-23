@@ -1,3 +1,8 @@
 .centered {
   text-align: center;
 }
+
+.btn {
+  color: green;
+  background-color: aqua;
+}
