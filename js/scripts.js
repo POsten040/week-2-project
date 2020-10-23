@@ -27,13 +27,13 @@ $(document).ready(function() {
         });
       });
     }
-  event.preventDefault();
-  $("btn2").click(function() {
-    ("h1#javascript").hide(function(){
-      $("h1#python").hide(function(){
-        $("h1#C").hide();
+  $("#btn2").click(function() {
+    $("h1#C").hide(function(){
+      $("h1#javascript").hide(function(){
+        $("h1#python").hide();
       });
     });
   });
+  event.preventDefault();
   });
 });
