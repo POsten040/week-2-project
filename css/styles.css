@@ -3,8 +3,13 @@
 }
 
 .btn {
-  color: green;
-  background-color: aqua;
+  color: white;
+  background-color: green;
+}
+
+#btn2 {
+  color: white;
+  background-color: lightcoral;
 }
 
 #python, #javascript, #C {
